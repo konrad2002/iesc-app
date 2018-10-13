@@ -101,7 +101,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.23077F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.76923F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel4.Controls.Add(this.btn_web_refresh, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_web_back, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_open_website, 2, 0);
@@ -119,7 +119,7 @@
             this.btn_web_refresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_web_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_web_refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_web_refresh.Location = new System.Drawing.Point(125, 2);
+            this.btn_web_refresh.Location = new System.Drawing.Point(124, 2);
             this.btn_web_refresh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_web_refresh.Name = "btn_web_refresh";
             this.btn_web_refresh.Size = new System.Drawing.Size(122, 48);
@@ -135,7 +135,7 @@
             this.btn_web_back.Location = new System.Drawing.Point(2, 2);
             this.btn_web_back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_web_back.Name = "btn_web_back";
-            this.btn_web_back.Size = new System.Drawing.Size(119, 48);
+            this.btn_web_back.Size = new System.Drawing.Size(118, 48);
             this.btn_web_back.TabIndex = 0;
             this.btn_web_back.Text = "Zurück";
             this.btn_web_back.UseVisualStyleBackColor = true;
@@ -146,10 +146,10 @@
             this.btn_open_website.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_open_website.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_open_website.ForeColor = System.Drawing.Color.White;
-            this.btn_open_website.Location = new System.Drawing.Point(251, 2);
+            this.btn_open_website.Location = new System.Drawing.Point(250, 2);
             this.btn_open_website.Margin = new System.Windows.Forms.Padding(2);
             this.btn_open_website.Name = "btn_open_website";
-            this.btn_open_website.Size = new System.Drawing.Size(146, 48);
+            this.btn_open_website.Size = new System.Drawing.Size(147, 48);
             this.btn_open_website.TabIndex = 0;
             this.btn_open_website.Text = "Website im Browser öffnen";
             this.btn_open_website.UseVisualStyleBackColor = true;
@@ -184,6 +184,7 @@
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(738, 45);
             this.trackBar1.TabIndex = 1;
+            this.trackBar1.TickFrequency = 10;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // progressBar1
@@ -191,8 +192,8 @@
             this.progressBar1.Location = new System.Drawing.Point(38, 193);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(738, 23);
+            this.progressBar1.Step = 100;
             this.progressBar1.TabIndex = 0;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // tabFiles
             // 

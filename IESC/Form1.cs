@@ -68,10 +68,6 @@ namespace IESC
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             state = trackBar1.Value;
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
             progressBar1.Value = state;
         }
     }
