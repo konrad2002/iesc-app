@@ -28,231 +28,472 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.website = new System.Windows.Forms.WebBrowser();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_web_refresh = new System.Windows.Forms.Button();
-            this.btn_web_back = new System.Windows.Forms.Button();
-            this.btn_open_website = new System.Windows.Forms.Button();
-            this.content = new System.Windows.Forms.TabControl();
-            this.tabMain = new System.Windows.Forms.TabPage();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.tabFiles = new System.Windows.Forms.TabPage();
-            this.tabStream = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.content.SuspendLayout();
-            this.tabMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.BtnStart = new System.Windows.Forms.Button();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DistanceBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.WkBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TimeBox = new System.Windows.Forms.TextBox();
+            this.Time8 = new System.Windows.Forms.Label();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.Time7 = new System.Windows.Forms.Label();
+            this.Time6 = new System.Windows.Forms.Label();
+            this.Time3 = new System.Windows.Forms.Label();
+            this.Time5 = new System.Windows.Forms.Label();
+            this.Time2 = new System.Windows.Forms.Label();
+            this.Time4 = new System.Windows.Forms.Label();
+            this.Time1 = new System.Windows.Forms.Label();
+            this.BtnNew = new System.Windows.Forms.Button();
+            this.BtnStop = new System.Windows.Forms.Button();
+            this.clock = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.logTime2 = new System.Windows.Forms.ListBox();
+            this.logTime = new System.Windows.Forms.ListBox();
+            this.BtnClear = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnRequest = new System.Windows.Forms.Button();
+            this.BtnLivetiming = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnExecuteStop = new System.Windows.Forms.Button();
+            this.BtnExecute = new System.Windows.Forms.Button();
+            this.BtnSwitcher = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // BtnStart
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.82884F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.17116F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.content, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.72046F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 904F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1262, 931);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.BtnStart.Location = new System.Drawing.Point(13, 17);
+            this.BtnStart.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnStart.Name = "BtnStart";
+            this.BtnStart.Size = new System.Drawing.Size(123, 34);
+            this.BtnStart.TabIndex = 1;
+            this.BtnStart.Text = "Start";
+            this.BtnStart.UseVisualStyleBackColor = true;
+            this.BtnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
-            // tableLayoutPanel3
+            // Timer
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.website, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(857, 29);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.88889F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.111111F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(403, 900);
-            this.tableLayoutPanel3.TabIndex = 2;
+            this.Timer.Enabled = true;
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // website
+            // groupBox1
             // 
-            this.website.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.website.Location = new System.Drawing.Point(2, 2);
-            this.website.Margin = new System.Windows.Forms.Padding(2);
-            this.website.MinimumSize = new System.Drawing.Size(15, 16);
-            this.website.Name = "website";
-            this.website.ScriptErrorsSuppressed = true;
-            this.website.Size = new System.Drawing.Size(399, 840);
-            this.website.TabIndex = 0;
-            this.website.Url = new System.Uri("http://www.erzgebirgsschwimmcup.de/index.php/dateien-links#content", System.UriKind.Absolute);
+            this.groupBox1.Controls.Add(this.DistanceBox);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.WkBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.TimeBox);
+            this.groupBox1.Controls.Add(this.Time8);
+            this.groupBox1.Controls.Add(this.progressBar);
+            this.groupBox1.Controls.Add(this.Time7);
+            this.groupBox1.Controls.Add(this.Time6);
+            this.groupBox1.Controls.Add(this.Time3);
+            this.groupBox1.Controls.Add(this.Time5);
+            this.groupBox1.Controls.Add(this.Time2);
+            this.groupBox1.Controls.Add(this.Time4);
+            this.groupBox1.Controls.Add(this.Time1);
+            this.groupBox1.Controls.Add(this.BtnNew);
+            this.groupBox1.Controls.Add(this.BtnStop);
+            this.groupBox1.Controls.Add(this.clock);
+            this.groupBox1.Controls.Add(this.BtnStart);
+            this.groupBox1.Location = new System.Drawing.Point(9, 92);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(405, 217);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Lauf";
             // 
-            // tableLayoutPanel4
+            // DistanceBox
             // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.23077F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.76923F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel4.Controls.Add(this.btn_web_refresh, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btn_web_back, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btn_open_website, 2, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 846);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(399, 52);
-            this.tableLayoutPanel4.TabIndex = 1;
+            this.DistanceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistanceBox.Location = new System.Drawing.Point(295, 63);
+            this.DistanceBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DistanceBox.Name = "DistanceBox";
+            this.DistanceBox.Size = new System.Drawing.Size(98, 46);
+            this.DistanceBox.TabIndex = 15;
+            this.DistanceBox.Text = "0m";
+            this.DistanceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btn_web_refresh
+            // label2
             // 
-            this.btn_web_refresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_web_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_web_refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_web_refresh.Location = new System.Drawing.Point(124, 2);
-            this.btn_web_refresh.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_web_refresh.Name = "btn_web_refresh";
-            this.btn_web_refresh.Size = new System.Drawing.Size(122, 48);
-            this.btn_web_refresh.TabIndex = 0;
-            this.btn_web_refresh.Text = "Neu laden";
-            this.btn_web_refresh.Click += new System.EventHandler(this.btn_web_refresh_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(175, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 31);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Strecke:";
             // 
-            // btn_web_back
+            // WkBox
             // 
-            this.btn_web_back.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_web_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_web_back.ForeColor = System.Drawing.Color.White;
-            this.btn_web_back.Location = new System.Drawing.Point(2, 2);
-            this.btn_web_back.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_web_back.Name = "btn_web_back";
-            this.btn_web_back.Size = new System.Drawing.Size(118, 48);
-            this.btn_web_back.TabIndex = 0;
-            this.btn_web_back.Text = "Zurück";
-            this.btn_web_back.UseVisualStyleBackColor = true;
-            this.btn_web_back.Click += new System.EventHandler(this.btn_web_back_Click);
+            this.WkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WkBox.Location = new System.Drawing.Point(84, 63);
+            this.WkBox.Margin = new System.Windows.Forms.Padding(2);
+            this.WkBox.Name = "WkBox";
+            this.WkBox.Size = new System.Drawing.Size(77, 46);
+            this.WkBox.TabIndex = 7;
+            this.WkBox.Text = "---";
+            this.WkBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btn_open_website
+            // label1
             // 
-            this.btn_open_website.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_open_website.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_open_website.ForeColor = System.Drawing.Color.White;
-            this.btn_open_website.Location = new System.Drawing.Point(250, 2);
-            this.btn_open_website.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_open_website.Name = "btn_open_website";
-            this.btn_open_website.Size = new System.Drawing.Size(147, 48);
-            this.btn_open_website.TabIndex = 0;
-            this.btn_open_website.Text = "Website im Browser öffnen";
-            this.btn_open_website.UseVisualStyleBackColor = true;
-            this.btn_open_website.Click += new System.EventHandler(this.btn_open_website_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 31);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "WK:";
             // 
-            // content
+            // TimeBox
             // 
-            this.content.Controls.Add(this.tabMain);
-            this.content.Controls.Add(this.tabFiles);
-            this.content.Controls.Add(this.tabStream);
-            this.content.Location = new System.Drawing.Point(3, 30);
-            this.content.Name = "content";
-            this.content.SelectedIndex = 0;
-            this.content.Size = new System.Drawing.Size(849, 898);
-            this.content.TabIndex = 3;
+            this.TimeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeBox.Location = new System.Drawing.Point(13, 116);
+            this.TimeBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TimeBox.Name = "TimeBox";
+            this.TimeBox.Size = new System.Drawing.Size(66, 46);
+            this.TimeBox.TabIndex = 13;
+            this.TimeBox.Text = "0";
+            this.TimeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tabMain
+            // Time8
             // 
-            this.tabMain.BackColor = System.Drawing.Color.MidnightBlue;
-            this.tabMain.Controls.Add(this.trackBar1);
-            this.tabMain.Controls.Add(this.progressBar1);
-            this.tabMain.Location = new System.Drawing.Point(4, 22);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMain.Size = new System.Drawing.Size(841, 872);
-            this.tabMain.TabIndex = 0;
-            this.tabMain.Text = "Start";
+            this.Time8.AutoSize = true;
+            this.Time8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time8.Location = new System.Drawing.Point(341, 142);
+            this.Time8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time8.Name = "Time8";
+            this.Time8.Size = new System.Drawing.Size(52, 20);
+            this.Time8.TabIndex = 12;
+            this.Time8.Text = "Time8";
             // 
-            // trackBar1
+            // progressBar
             // 
-            this.trackBar1.Location = new System.Drawing.Point(38, 243);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(738, 45);
-            this.trackBar1.TabIndex = 1;
-            this.trackBar1.TickFrequency = 10;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.progressBar.Location = new System.Drawing.Point(13, 180);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(2);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(385, 24);
+            this.progressBar.TabIndex = 4;
             // 
-            // progressBar1
+            // Time7
             // 
-            this.progressBar1.Location = new System.Drawing.Point(38, 193);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(738, 23);
-            this.progressBar1.Step = 100;
-            this.progressBar1.TabIndex = 0;
+            this.Time7.AutoSize = true;
+            this.Time7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time7.Location = new System.Drawing.Point(287, 142);
+            this.Time7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time7.Name = "Time7";
+            this.Time7.Size = new System.Drawing.Size(52, 20);
+            this.Time7.TabIndex = 11;
+            this.Time7.Text = "Time7";
             // 
-            // tabFiles
+            // Time6
             // 
-            this.tabFiles.Location = new System.Drawing.Point(4, 22);
-            this.tabFiles.Name = "tabFiles";
-            this.tabFiles.Size = new System.Drawing.Size(841, 872);
-            this.tabFiles.TabIndex = 2;
-            this.tabFiles.Text = "Dateien";
-            this.tabFiles.UseVisualStyleBackColor = true;
+            this.Time6.AutoSize = true;
+            this.Time6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time6.Location = new System.Drawing.Point(232, 142);
+            this.Time6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time6.Name = "Time6";
+            this.Time6.Size = new System.Drawing.Size(52, 20);
+            this.Time6.TabIndex = 10;
+            this.Time6.Text = "Time6";
             // 
-            // tabStream
+            // Time3
             // 
-            this.tabStream.Location = new System.Drawing.Point(4, 22);
-            this.tabStream.Name = "tabStream";
-            this.tabStream.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStream.Size = new System.Drawing.Size(841, 872);
-            this.tabStream.TabIndex = 1;
-            this.tabStream.Text = "Stream";
-            this.tabStream.UseVisualStyleBackColor = true;
+            this.Time3.AutoSize = true;
+            this.Time3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time3.Location = new System.Drawing.Point(287, 117);
+            this.Time3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time3.Name = "Time3";
+            this.Time3.Size = new System.Drawing.Size(52, 20);
+            this.Time3.TabIndex = 9;
+            this.Time3.Text = "Time3";
+            // 
+            // Time5
+            // 
+            this.Time5.AutoSize = true;
+            this.Time5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time5.Location = new System.Drawing.Point(177, 142);
+            this.Time5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time5.Name = "Time5";
+            this.Time5.Size = new System.Drawing.Size(52, 20);
+            this.Time5.TabIndex = 8;
+            this.Time5.Text = "Time5";
+            // 
+            // Time2
+            // 
+            this.Time2.AutoSize = true;
+            this.Time2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time2.Location = new System.Drawing.Point(232, 117);
+            this.Time2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time2.Name = "Time2";
+            this.Time2.Size = new System.Drawing.Size(52, 20);
+            this.Time2.TabIndex = 7;
+            this.Time2.Text = "Time2";
+            // 
+            // Time4
+            // 
+            this.Time4.AutoSize = true;
+            this.Time4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time4.Location = new System.Drawing.Point(341, 117);
+            this.Time4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time4.Name = "Time4";
+            this.Time4.Size = new System.Drawing.Size(52, 20);
+            this.Time4.TabIndex = 6;
+            this.Time4.Text = "Time4";
+            // 
+            // Time1
+            // 
+            this.Time1.AutoSize = true;
+            this.Time1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Time1.Location = new System.Drawing.Point(177, 117);
+            this.Time1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Time1.Name = "Time1";
+            this.Time1.Size = new System.Drawing.Size(52, 20);
+            this.Time1.TabIndex = 5;
+            this.Time1.Text = "Time1";
+            // 
+            // BtnNew
+            // 
+            this.BtnNew.Location = new System.Drawing.Point(270, 17);
+            this.BtnNew.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(123, 34);
+            this.BtnNew.TabIndex = 4;
+            this.BtnNew.Text = "Neu";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
+            // 
+            // BtnStop
+            // 
+            this.BtnStop.Location = new System.Drawing.Point(142, 17);
+            this.BtnStop.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnStop.Name = "BtnStop";
+            this.BtnStop.Size = new System.Drawing.Size(123, 34);
+            this.BtnStop.TabIndex = 3;
+            this.BtnStop.Text = "Stop";
+            this.BtnStop.UseVisualStyleBackColor = true;
+            this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
+            // 
+            // clock
+            // 
+            this.clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clock.Location = new System.Drawing.Point(83, 116);
+            this.clock.Margin = new System.Windows.Forms.Padding(2);
+            this.clock.Name = "clock";
+            this.clock.Size = new System.Drawing.Size(91, 46);
+            this.clock.TabIndex = 2;
+            this.clock.Text = "00:00";
+            this.clock.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.logTime2);
+            this.groupBox2.Controls.Add(this.logTime);
+            this.groupBox2.Controls.Add(this.BtnClear);
+            this.groupBox2.Controls.Add(this.log);
+            this.groupBox2.Location = new System.Drawing.Point(9, 322);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(405, 261);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ereignisse";
+            // 
+            // logTime2
+            // 
+            this.logTime2.FormattingEnabled = true;
+            this.logTime2.Location = new System.Drawing.Point(69, 69);
+            this.logTime2.Margin = new System.Windows.Forms.Padding(2);
+            this.logTime2.Name = "logTime2";
+            this.logTime2.Size = new System.Drawing.Size(45, 186);
+            this.logTime2.TabIndex = 3;
+            // 
+            // logTime
+            // 
+            this.logTime.FormattingEnabled = true;
+            this.logTime.Location = new System.Drawing.Point(4, 69);
+            this.logTime.Margin = new System.Windows.Forms.Padding(2);
+            this.logTime.Name = "logTime";
+            this.logTime.Size = new System.Drawing.Size(61, 186);
+            this.logTime.TabIndex = 2;
+            // 
+            // BtnClear
+            // 
+            this.BtnClear.Location = new System.Drawing.Point(4, 24);
+            this.BtnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(392, 29);
+            this.BtnClear.TabIndex = 1;
+            this.BtnClear.Text = "Liste löschen";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // log
+            // 
+            this.log.FormattingEnabled = true;
+            this.log.Location = new System.Drawing.Point(118, 69);
+            this.log.Margin = new System.Windows.Forms.Padding(2);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(279, 186);
+            this.log.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.BtnSwitcher);
+            this.groupBox3.Controls.Add(this.BtnRequest);
+            this.groupBox3.Controls.Add(this.BtnLivetiming);
+            this.groupBox3.Location = new System.Drawing.Point(9, 601);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(405, 58);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "weitere Funktionen";
+            // 
+            // BtnRequest
+            // 
+            this.BtnRequest.Location = new System.Drawing.Point(270, 22);
+            this.BtnRequest.Name = "BtnRequest";
+            this.BtnRequest.Size = new System.Drawing.Size(120, 26);
+            this.BtnRequest.TabIndex = 5;
+            this.BtnRequest.Text = "manuelle Abfrage";
+            this.BtnRequest.UseVisualStyleBackColor = true;
+            this.BtnRequest.Click += new System.EventHandler(this.BtnRequest_Click);
+            // 
+            // BtnLivetiming
+            // 
+            this.BtnLivetiming.Location = new System.Drawing.Point(18, 21);
+            this.BtnLivetiming.Name = "BtnLivetiming";
+            this.BtnLivetiming.Size = new System.Drawing.Size(120, 26);
+            this.BtnLivetiming.TabIndex = 4;
+            this.BtnLivetiming.Text = "Livetiming anzeigen";
+            this.BtnLivetiming.UseVisualStyleBackColor = true;
+            this.BtnLivetiming.Click += new System.EventHandler(this.BtnLivetiming_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.BtnExecuteStop);
+            this.groupBox4.Controls.Add(this.BtnExecute);
+            this.groupBox4.Location = new System.Drawing.Point(9, 9);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(405, 78);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Programm";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(250, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(137, 29);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "gestoppt";
+            // 
+            // BtnExecuteStop
+            // 
+            this.BtnExecuteStop.Location = new System.Drawing.Point(135, 24);
+            this.BtnExecuteStop.Name = "BtnExecuteStop";
+            this.BtnExecuteStop.Size = new System.Drawing.Size(109, 35);
+            this.BtnExecuteStop.TabIndex = 1;
+            this.BtnExecuteStop.Text = "Anhalten";
+            this.BtnExecuteStop.UseVisualStyleBackColor = true;
+            this.BtnExecuteStop.Click += new System.EventHandler(this.BtnExecuteStop_Click);
+            // 
+            // BtnExecute
+            // 
+            this.BtnExecute.Location = new System.Drawing.Point(20, 24);
+            this.BtnExecute.Name = "BtnExecute";
+            this.BtnExecute.Size = new System.Drawing.Size(109, 35);
+            this.BtnExecute.TabIndex = 0;
+            this.BtnExecute.Text = "Starten";
+            this.BtnExecute.UseVisualStyleBackColor = true;
+            this.BtnExecute.Click += new System.EventHandler(this.BtnExecute_Click);
+            // 
+            // BtnSwitcher
+            // 
+            this.BtnSwitcher.Location = new System.Drawing.Point(144, 24);
+            this.BtnSwitcher.Name = "BtnSwitcher";
+            this.BtnSwitcher.Size = new System.Drawing.Size(120, 23);
+            this.BtnSwitcher.TabIndex = 6;
+            this.BtnSwitcher.Text = "Szenenwechsler";
+            this.BtnSwitcher.UseVisualStyleBackColor = true;
+            this.BtnSwitcher.Click += new System.EventHandler(this.BtnSwitcher_Click);
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 931);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(424, 670);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "main";
             this.Text = "IESC";
-            this.Load += new System.EventHandler(this.main_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.content.ResumeLayout(false);
-            this.tabMain.ResumeLayout(false);
-            this.tabMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button btn_web_back;
-        private System.Windows.Forms.Button btn_open_website;
-        private System.Windows.Forms.Button btn_web_refresh;
-        private System.Windows.Forms.WebBrowser website;
-        private System.Windows.Forms.TabControl content;
-        private System.Windows.Forms.TabPage tabMain;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.TabPage tabFiles;
-        private System.Windows.Forms.TabPage tabStream;
+        private System.Windows.Forms.Button BtnStart;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button BtnStop;
+        private System.Windows.Forms.TextBox clock;
+        private System.Windows.Forms.Button BtnNew;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnClear;
+        private System.Windows.Forms.ListBox log;
+        private System.Windows.Forms.ListBox logTime;
+        private System.Windows.Forms.Label Time6;
+        private System.Windows.Forms.Label Time3;
+        private System.Windows.Forms.Label Time5;
+        private System.Windows.Forms.Label Time2;
+        private System.Windows.Forms.Label Time4;
+        private System.Windows.Forms.Label Time1;
+        private System.Windows.Forms.Label Time8;
+        private System.Windows.Forms.Label Time7;
+        private System.Windows.Forms.ListBox logTime2;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button BtnLivetiming;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnExecuteStop;
+        private System.Windows.Forms.Button BtnExecute;
+        private System.Windows.Forms.Button BtnRequest;
+        private System.Windows.Forms.TextBox DistanceBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox WkBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TimeBox;
+        private System.Windows.Forms.Button BtnSwitcher;
     }
 }
 
